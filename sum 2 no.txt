@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class Example
+{
+public:
+    int a;
+    Example add(Example a1,Example a2)
+    {
+        Example a3;
+        a3.a=a1.a+a2.a;
+        return a3;
+    }
+};
+int main()
+{
+    Example a1,a2,a3;
+    a1.a=20;
+    a2.a=30;
+    a3=a3.add(a1,a2);
+    cout<<"sum="<<a3.a<<endl;
+    return 0;
+}
